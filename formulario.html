@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Envía tu noticia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body id="formulario">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formularios</title>
+</head>
+<body>
     <header>
-      <h1>Formulario <h1>
-      <nav>
-        <a href="/" class="button">Portada</a>
-      </nav>
+        <h1>Envía tu noticia</h1>
     </header>
-
-    <main>(poner aquí el formulario)</main>
-  </body>
+        <section><header><h2>Portada</h2></header></section>
+        <section>
+            <header><h3>Cubre estos datos para enviar tu noticia</h3></header>
+            <form action="/text.js" method="GET">
+                <label for="título">Título de la noticia</label>
+                <input type="text" name="título" id="titulo" autofocus required />
+               <label for="texto">Texo de la noticia
+                    <input type="text" name="texto" id="texto" required />
+                </label>
+            <p>
+                    <button type="submit">Enviar</button>
+                </p>
+                </form>  
+        </section>
+</body>
 </html>
